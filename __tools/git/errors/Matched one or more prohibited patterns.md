@@ -23,7 +23,6 @@ Possible mitigations:
 ## Hint
 By Gemini
 
-```markdown
 The error message you're seeing indicates that your Git pre-commit hooks are configured to prevent you from committing sensitive data, such as API keys. In your case, the Google Maps API key `AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8` is being flagged as a prohibited pattern.
 
 Here's a breakdown of the problem and solutions:
@@ -92,5 +91,5 @@ Here's a breakdown of the problem and solutions:
 * Prioritize removing the API key from your code and using environment variables or configuration files.
 * If removing the key is not immediately feasible, use the `.gitallowed` file to manage allowed patterns.
 * Avoid using `--no-verify` unless absolutely necessary.
-```
+
 ### Solution
